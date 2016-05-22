@@ -85,11 +85,19 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-CCSF_Resources/Bolts.framework"
+  install_framework "Pods-CCSF_Resources/FBSDKCoreKit.framework"
+  install_framework "Pods-CCSF_Resources/FBSDKLoginKit.framework"
   install_framework "Pods-CCSF_Resources/MBProgressHUD.framework"
   install_framework "Pods-CCSF_Resources/Parse.framework"
+  install_framework "Pods-CCSF_Resources/ParseFacebookUtilsV4.framework"
+  install_framework "Pods-CCSF_Resources/ParseUI.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-CCSF_Resources/Bolts.framework"
+  install_framework "Pods-CCSF_Resources/FBSDKCoreKit.framework"
+  install_framework "Pods-CCSF_Resources/FBSDKLoginKit.framework"
   install_framework "Pods-CCSF_Resources/MBProgressHUD.framework"
   install_framework "Pods-CCSF_Resources/Parse.framework"
+  install_framework "Pods-CCSF_Resources/ParseFacebookUtilsV4.framework"
+  install_framework "Pods-CCSF_Resources/ParseUI.framework"
 fi
