@@ -29,20 +29,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjh-pm-rci">
-                                <rect key="frame" x="273" y="358" width="55" height="30"/>
-                                <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <action selector="onSignUp:" destination="wxQ-5b-s0H" eventType="touchUpInside" id="mds-Hm-g6M"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlk-OM-juc">
-                                <rect key="frame" x="277" y="315" width="47" height="30"/>
-                                <state key="normal" title="Sign In"/>
-                                <connections>
-                                    <action selector="onSignIn:" destination="wxQ-5b-s0H" eventType="touchUpInside" id="LXr-BJ-2UE"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nod-FB-38e">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
@@ -55,18 +41,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use any email and password." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8r-bf-ezd">
-                                <rect key="frame" x="20" y="418" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure you will remember it!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgE-6f-Ayo">
-                                <rect key="frame" x="179" y="462" width="242" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqD-Y9-HZd">
                                 <rect key="frame" x="193" y="187" width="214" height="30"/>
                                 <constraints>
@@ -76,6 +50,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pC5-c1-bB5">
+                                <rect key="frame" x="277" y="96" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjh-pm-rci">
+                                <rect key="frame" x="273" y="441" width="55" height="30"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="onSignUp:" destination="wxQ-5b-s0H" eventType="touchUpInside" id="mds-Hm-g6M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlk-OM-juc">
+                                <rect key="frame" x="277" y="398" width="47" height="30"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="onSignIn:" destination="wxQ-5b-s0H" eventType="touchUpInside" id="LXr-BJ-2UE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use any email and password." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8r-bf-ezd">
+                                <rect key="frame" x="20" y="501" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure you will remember it!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgE-6f-Ayo">
+                                <rect key="frame" x="179" y="545" width="242" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -83,7 +87,7 @@
                             <constraint firstItem="AqD-Y9-HZd" firstAttribute="centerX" secondItem="SCh-6n-AZ2" secondAttribute="centerX" id="IVr-F9-z85"/>
                             <constraint firstItem="Rlk-OM-juc" firstAttribute="centerX" secondItem="SCh-6n-AZ2" secondAttribute="centerX" id="MXS-uo-ZbI"/>
                             <constraint firstItem="xZM-Gq-81l" firstAttribute="top" secondItem="0gG-Ms-a9v" secondAttribute="bottom" constant="226" id="MtI-1Y-ErZ"/>
-                            <constraint firstItem="Yjh-pm-rci" firstAttribute="top" secondItem="0gG-Ms-a9v" secondAttribute="bottom" constant="338" id="PPJ-nc-xdp"/>
+                            <constraint firstItem="Yjh-pm-rci" firstAttribute="top" secondItem="0gG-Ms-a9v" secondAttribute="bottom" constant="421" id="PPJ-nc-xdp"/>
                             <constraint firstItem="nod-FB-38e" firstAttribute="width" secondItem="SCh-6n-AZ2" secondAttribute="width" id="QgZ-s5-QS7"/>
                             <constraint firstItem="nod-FB-38e" firstAttribute="centerX" secondItem="SCh-6n-AZ2" secondAttribute="centerX" id="Rxm-Sh-B37"/>
                             <constraint firstItem="WgE-6f-Ayo" firstAttribute="top" secondItem="N8r-bf-ezd" secondAttribute="bottom" constant="23" id="VOH-DR-rdc"/>
@@ -93,8 +97,8 @@
                             <constraint firstItem="WgE-6f-Ayo" firstAttribute="centerX" secondItem="SCh-6n-AZ2" secondAttribute="centerX" id="oCU-94-6Sf"/>
                             <constraint firstItem="nod-FB-38e" firstAttribute="top" secondItem="0gG-Ms-a9v" secondAttribute="bottom" id="oiL-B3-dCA"/>
                             <constraint firstItem="Yjh-pm-rci" firstAttribute="centerX" secondItem="SCh-6n-AZ2" secondAttribute="centerX" id="pVC-Ti-0oQ"/>
-                            <constraint firstItem="N8r-bf-ezd" firstAttribute="top" secondItem="0gG-Ms-a9v" secondAttribute="bottom" constant="398" id="wTP-IU-eYy"/>
-                            <constraint firstItem="Rlk-OM-juc" firstAttribute="top" secondItem="0gG-Ms-a9v" secondAttribute="bottom" constant="295" id="ySb-KQ-oTP"/>
+                            <constraint firstItem="N8r-bf-ezd" firstAttribute="top" secondItem="0gG-Ms-a9v" secondAttribute="bottom" constant="481" id="wTP-IU-eYy"/>
+                            <constraint firstItem="Rlk-OM-juc" firstAttribute="top" secondItem="0gG-Ms-a9v" secondAttribute="bottom" constant="378" id="ySb-KQ-oTP"/>
                         </constraints>
                     </view>
                     <connections>

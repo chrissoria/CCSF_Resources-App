@@ -7,6 +7,8 @@ target 'CCSF_Resources' do
 
     pod 'MBProgressHUD'
     pod 'Parse'
+    pod 'ParseFacebookUtilsV4'
+    pod 'ParseUI'
 
 end
 

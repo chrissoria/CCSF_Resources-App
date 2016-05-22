@@ -10,6 +10,7 @@ import UIKit
 import MBProgressHUD
 import Parse
 
+
 class MasterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var textLabel: UILabel!

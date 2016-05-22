@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5428B3341CF1AA690059A02D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5428B3331CF1AA690059A02D /* FBSDKCoreKit.framework */; };
+		5428B3361CF1AA7A0059A02D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5428B3351CF1AA7A0059A02D /* FBSDKLoginKit.framework */; };
+		5428B3381CF1AA890059A02D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5428B3371CF1AA890059A02D /* FBSDKShareKit.framework */; };
+		5428B3411CF1B55A0059A02D /* FbBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5428B3401CF1B55A0059A02D /* FbBridge.m */; };
+		5428B3431CF1BCBE0059A02D /* FBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428B3421CF1BCBE0059A02D /* FBLoginViewController.swift */; };
 		54648B9E1CEAA85F00C4C504 /* ResourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54648B9D1CEAA85F00C4C504 /* ResourceTableViewCell.swift */; };
 		54888A0B1CE84B6700E6990C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54888A0A1CE84B6700E6990C /* AppDelegate.swift */; };
 		54888A101CE84B6700E6990C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54888A0E1CE84B6700E6990C /* Main.storyboard */; };
@@ -25,6 +30,12 @@
 /* Begin PBXFileReference section */
 		017211CD699C90DED1843B38 /* Pods-CCSF_Resources.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCSF_Resources.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCSF_Resources/Pods-CCSF_Resources.debug.xcconfig"; sourceTree = "<group>"; };
 		4F9797E45A733F8963A17624 /* Pods-CCSF_Resources.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCSF_Resources.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCSF_Resources/Pods-CCSF_Resources.release.xcconfig"; sourceTree = "<group>"; };
+		5428B3331CF1AA690059A02D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		5428B3351CF1AA7A0059A02D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		5428B3371CF1AA890059A02D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../FBSDKShareKit.framework; sourceTree = "<group>"; };
+		5428B33F1CF1B5590059A02D /* CCSF_Resources-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCSF_Resources-Bridging-Header.h"; sourceTree = "<group>"; };
+		5428B3401CF1B55A0059A02D /* FbBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FbBridge.m; sourceTree = "<group>"; };
+		5428B3421CF1BCBE0059A02D /* FBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
 		54648B9D1CEAA85F00C4C504 /* ResourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceTableViewCell.swift; sourceTree = "<group>"; };
 		54888A071CE84B6700E6990C /* CCSF_Resources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCSF_Resources.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54888A0A1CE84B6700E6990C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5428B3381CF1AA890059A02D /* FBSDKShareKit.framework in Frameworks */,
 				D18B63A46B95557626CB4C82 /* Pods_CCSF_Resources.framework in Frameworks */,
+				5428B3341CF1AA690059A02D /* FBSDKCoreKit.framework in Frameworks */,
+				5428B3361CF1AA7A0059A02D /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +75,7 @@
 				54888A201CE8745700E6990C /* ContainerViewController.swift */,
 				54888A1E1CE8743000E6990C /* MenuTableViewController.swift */,
 				54B792CE1CEB0A6F0095715A /* LoginViewController.swift */,
+				5428B3421CF1BCBE0059A02D /* FBLoginViewController.swift */,
 				54B792D01CEB94AD0095715A /* DetailViewController.swift */,
 			);
 			name = "View Controllers";
@@ -102,7 +117,12 @@
 				54888A111CE84B6700E6990C /* Assets.xcassets */,
 				54888A131CE84B6700E6990C /* LaunchScreen.storyboard */,
 				54888A161CE84B6700E6990C /* Info.plist */,
+				5428B3371CF1AA890059A02D /* FBSDKShareKit.framework */,
+				5428B3351CF1AA7A0059A02D /* FBSDKLoginKit.framework */,
+				5428B3331CF1AA690059A02D /* FBSDKCoreKit.framework */,
 				548E8F6B1CEEBF9600E2850B /* xib files */,
+				5428B3401CF1B55A0059A02D /* FbBridge.m */,
+				5428B33F1CF1B5590059A02D /* CCSF_Resources-Bridging-Header.h */,
 			);
 			path = CCSF_Resources;
 			sourceTree = "<group>";
@@ -260,6 +280,8 @@
 				54B792CF1CEB0A6F0095715A /* LoginViewController.swift in Sources */,
 				548E8F6A1CEEBF9000E2850B /* CustomImageView.swift in Sources */,
 				54888A231CE8747200E6990C /* MasterViewController.swift in Sources */,
+				5428B3411CF1B55A0059A02D /* FbBridge.m in Sources */,
+				5428B3431CF1BCBE0059A02D /* FBLoginViewController.swift in Sources */,
 				54888A0B1CE84B6700E6990C /* AppDelegate.swift in Sources */,
 				54648B9E1CEAA85F00C4C504 /* ResourceTableViewCell.swift in Sources */,
 				54888A211CE8745700E6990C /* ContainerViewController.swift in Sources */,
@@ -378,10 +400,17 @@
 			baseConfigurationReference = 017211CD699C90DED1843B38 /* Pods-CCSF_Resources.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CCSF_Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.CCSF-Resources";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CCSF_Resources/CCSF_Resources-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -390,10 +419,16 @@
 			baseConfigurationReference = 4F9797E45A733F8963A17624 /* Pods-CCSF_Resources.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CCSF_Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.CCSF-Resources";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CCSF_Resources/CCSF_Resources-Bridging-Header.h";
 			};
 			name = Release;
 		};

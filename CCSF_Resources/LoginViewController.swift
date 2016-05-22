@@ -9,14 +9,30 @@
 import UIKit
 import Parse
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var emailField: UITextField!
+    let fbLoginButton: FBSDKLoginButton? = {
+    let button = FBSDKLoginButton()
+        button.readPermissions = ["email"]
+        return button
+        
+}()
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(fbLoginButton!)
+        fbLoginButton?.center = view.center
+        fbLoginButton?.delegate = self
+        
+        if let token = FBSDKAccessToken.currentAccessToken() {
+            fetchProfile()
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -47,6 +63,7 @@ class LoginViewController: UIViewController {
         let newUser = PFUser()
         newUser.username = usernameField.text
         newUser.password = passwordField.text
+
         //newUser.email = emailField.text
         
         newUser.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
@@ -62,6 +79,23 @@ class LoginViewController: UIViewController {
     @IBAction func onCancel(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
         
+    }
+    
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        print("completed fb login")
+        fetchProfile()
+    }
+    
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        
+    }
+    
+    func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
+        return true
+    }
+    
+    func fetchProfile(){
+        print("fetch profile")
     }
 
     /*
