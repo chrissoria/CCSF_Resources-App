@@ -85,11 +85,34 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         print("completed fb login")
-        fetchProfile()
+        //fetchProfile()
+        
+        var permissions = ["public_profile"]
+        
+        PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions) { (user: PFUser?, error: NSError?) -> Void in
+            
+            print("User: \(user)")
+            print("Error: \(error)")
+            
+            if let user = user {
+                if user.isNew {
+                    print("User signed up and logged in through Facebook!")
+                }
+                
+                } else {
+                
+                print("User logged in through Facebook!")
+                
+                let currentUser = PFUser.currentUser()
+                
+            }
+            
+ 
+        }
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        
+        print("fb logout")
     }
     
     func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
@@ -98,6 +121,20 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func fetchProfile(){
         print("fetch profile")
+        
+        let parameters = ["fields": "email, first_name, last_name, picture.type(large)"]
+        FBSDKGraphRequest(graphPath: "me", parameters: parameters).startWithCompletionHandler { (connection, result, error) -> Void in
+            
+            if error != nil {
+                print(error)
+                return
+            }
+            
+            //if let email = result["email"] as? String {
+                
+            }
+        
+    
     }
 
     /*
